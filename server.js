@@ -1,35 +1,45 @@
 const express = require('express')
 const app = express()
-const MongoClient = require('mongodb').MongoClient
-const PORT = 2121
-require('dotenv').config()
+const mongoose = require('mongoose')
+const passport = require('passport')
+const session = require('express-session')
+const MongoStore = require('connect-mongo')(session)
+const connectDB = require('./config/database')
+const authRoutes = require('./routes/auth')
+const homeRoutes = require('./routes/home')
+const todoRoutes = require('./routes/todos')
 
+require('dotenv').config({path: './config/.env'})
 
-//connect to Database
-let db,
-    dbConnectionStr = process.env.DB_STRING,
-    dbName ="pueblosMagicos"
+// Passport config
+require('./config/passport')(passport)
 
-MongoClient.connect(dbConnectionStr, {useUnifiedTopology: true})
-    .then(client => {
-        console.log(`Connected to ${dbName} Database`)
-        db = client.db(dbName)
-    })
-    
+connectDB()
 
-//Setting up Server
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
-app.use(express.urlencoded({extended: true}))
+app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
-// app.get('/',async (request, response)=>{
-//     const todoItems = await db.collection('pueblosMagicos').find().toArray()
-//     const itemsLeft = await db.collection('pueblosMagicos').countDocuments({completed: false})
-//     response.render('index.ejs', { items: todoItems, left: itemsLeft })
+// Sessions
+app.use(
+    session({
+      secret: 'keyboard cat',
+      resave: false,
+      saveUninitialized: false,
+      store: new MongoStore({ mongooseConnection: mongoose.connection }),
+    })
+  )
+  
+// Passport middleware
+app.use(passport.initialize())
+app.use(passport.session())
 
-app.listen(process.env.PORT || PORT, ()=> {
-    console.log(`Server running on port ${PORT}`)
-})
-//
+  
+app.use('/', homeRoutes)
+app.use('/auth', authRoutes)
+app.use('/todos', todoRoutes)
  
+app.listen(process.env.PORT, ()=>{
+    console.log('Server is running, you better catch it!')
+})    
