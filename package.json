@@ -1,7 +1,7 @@
 {
   "name": "pueblosMagicos",
   "version": "1.0.0",
-  "description": "100Devs Social Network",
+  "description": "a project that will help people discover the beauty of Mexico",
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.js",
