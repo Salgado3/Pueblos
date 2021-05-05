@@ -1,20 +1,20 @@
-# Install
+# Los Pueblos Magicos de Mexico
 
-`npm install`
 
----
+**Link to project:** 
 
-# Things to add
+![alt tag](http://placecorgi.com/1200/650)
 
-- Create a `.env` file and add the following as `key = value`
-  - PORT = 2121 (can be any port example: 3000)
-  - DB_STRING = `your database URI`
-  - CLOUD_NAME = `your cloudinary cloud name`
-  - API_KEY = `your cloudinary api key`
-  - API_SECRET = `your cloudinary api secret`
+## How It's Made:
 
----
+**Tech used:** HTML, CSS, JavaScript, EJS, Node
 
-# Run
+how was it built?
 
-`npm start`
+## Optimizations
+
+
+## Lessons Learned:
+
+a lot!!
+
