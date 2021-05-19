@@ -1,4 +1,13 @@
-.main {
-    border: 2px solid red;
-    background-image: url('https://unsplash.com/photos/oHWCOXSYdsg');
+span {
+color: white;
+font-size: 2em;
+background: rgb(57, 61, 61);
+opacity: .8;
+}
+
+.loginTitle a {
+    color: white;
+font-size: 2em;
+background: rgb(57, 61, 61);
+opacity: .8;
 }
