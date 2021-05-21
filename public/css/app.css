@@ -1,5 +1,5 @@
 body {
-  background-image: url("https://images.unsplash.com/photo-1518105779142-d975f22f1b0a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+  background-image: url('https://res.cloudinary.com/pueblosmagicos/image/upload/v1621633987/h1q9svmmzcqlebq3nyky.jpg');
   color: #dddddd;
 }
 
@@ -7,14 +7,15 @@ body {
   background: rgba(143, 135, 135, 0.5);
   margin-bottom: 5%;
 }
-/* 
+
 #feed {
   background: rgba(64, 74, 165, 0.5);
-} */
+}
 
 .image {
   position: relative;
-  width: 400px;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .image__img {
