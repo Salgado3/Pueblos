@@ -5,9 +5,16 @@
       <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="col-6 justify-content-between mt-5">
+            <div class="image">
+
             <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid" src="<%= posts[i].image%>">
+              <img class="img-fluid image__img" src="<%= posts[i].image%>">
+              <div class="image__overlay">
+                <div class="image__title">Example</div>
+                <p class="image__description">description</p>
+              </div>
             </a>
+          </div>
           </li>
         <% } %>
         </ul>
