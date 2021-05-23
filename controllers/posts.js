@@ -37,6 +37,7 @@ module.exports = {
         cloudinaryId: result.public_id,
         description: req.body.description,
         likes: 0,
+        airportId: req.body.airportId,
         user: req.user.id,
       });
       console.log("Post has been added!");
