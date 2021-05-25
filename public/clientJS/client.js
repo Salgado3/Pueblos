@@ -12,7 +12,7 @@ async function searchAirId() {
 }
 
 
-
+//template not working at the moment
 // async function searchAirId() {
 //     const sName = this.parentNode.querySelector(".stageName").innerText;
 //     const bName = this.parentNode.querySelector(".birthName").innerText;
