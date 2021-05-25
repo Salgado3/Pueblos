@@ -120,24 +120,4 @@
 <input type="button" value="search" class="airbtn"></form>
 
 
-
-  <div class="container" id="feed">
-    <div class="row justify-content-center mt-5">
-      <ul class="row list-unstyled">
-        <% for(var i=0; i<posts.length; i++) {%>
-          <li class="col-6 justify-content-between mt-5">
-            <div class="image">
-            <a href="/post/<%= posts[i]._id%>">
-              <img class="img-fluid image__img" src="<%= posts[i].image%>">
-              <div class="image__overlay">
-                <div class="image__title"><%= posts[i].title%></div>
-                <p class="image__description"><%= posts[i].caption%></p>
-              </div>
-            </a>
-          </div>
-          </li>
-        <% } %>
-        </ul>
-    </div>
-  </div>  
 <%- include('partials/footer') -%>
