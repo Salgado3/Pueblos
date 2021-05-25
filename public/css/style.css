@@ -1,13 +1,15 @@
-span {
-color: white;
-font-size: 2em;
-background: rgb(57, 61, 61);
-opacity: .8;
+.loginTitle a {
+  color: rgb(221, 124, 140);
+  font-size: 2em;
+  font-family: "Pattaya", sans-serif;
+  background: rgb(99, 194, 194);
+  opacity: 0.9;
 }
 
-.loginTitle a {
-    color: white;
-font-size: 2em;
-background: rgb(57, 61, 61);
-opacity: .8;
+span {
+  color: (221, 124, 140);
+  font-family: "Pattaya", sans-serif;
+  font-size: 2em;
+  background: rgb(99, 194, 194);
+  opacity: 0.9;
 }
