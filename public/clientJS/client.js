@@ -1,36 +1,18 @@
+const airportBtn = document
+  .querySelector(".airbtn")
+  .addEventListener("click", searchAirId);
+console.log("testing");
 
-const airportBtn = document.querySelectorAll(".airbtn").addEventListener('click',searchAirId)
+async function searchAirId(e) {
+  const airportCode = e.target.previousElementSibling.value;
+  try {
+    console.log(airportCode);
+    const response = await fetch(
+      `/api/airportCodes?airportCode=${airportCode}`
+    );
 
-
-
-async function searchAirId() {
-    try{
-        console.log("the button is working")
-    }catch (err) {
-              console.log(err);
-            }
+    //accept data from api.js controller and dynamically insert html by targeting a container in the dom and insert html into that container (div,lis,uls,etc) good use for Id.
+  } catch (err) {
+    console.log(err);
+  }
 }
-
-
-//template not working at the moment
-// async function searchAirId() {
-//     const sName = this.parentNode.querySelector(".stageName").innerText;
-//     const bName = this.parentNode.querySelector(".birthName").innerText;
-//     const tLikes = Number(this.parentNode.querySelector(".likes").innerText);
-//     try {
-//       const response = await fetch("/feed", {
-//         method: "put",
-//         headers: { "Content-Type": "application/json" },
-//         body: JSON.stringify({
-//           stageNameS: sName,
-//           birthNameS: bName,
-//           likesS: tLikes,
-//         }),
-//       });
-//       const data = await response.json();
-//       console.log(data);
-//       location.reload();
-//     } catch (err) {
-//       console.log(err);
-//     }
-//   }
