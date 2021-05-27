@@ -5,7 +5,7 @@ console.log("testing");
 function searchAirId(e) {
   const airportCode = e.target.previousElementSibling.value;
   //   document.querySelector(".airbtn").value = airportCode;
-  console.log(airportCode);
+  //   console.log(airportCode);
 
   //need to get value of select to api/controllers need to form data from select.
 
