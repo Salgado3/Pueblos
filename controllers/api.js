@@ -10,6 +10,7 @@ module.exports = {
       const posts = await Post.find({
         airportId: req.body.airportId,
       });
+      res.render("feed.ejs", { posts: posts });
       console.log(posts);
     } catch (err) {
       console.log(err);
