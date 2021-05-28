@@ -12,8 +12,11 @@ module.exports = {
   },
   getFeed: async (req, res) => {
     try {
-      const posts = await Post.find().sort({ createdAt: "desc" }).lean();
+      const posts = await Post.find({
+        airportId: req.body.airportId,
+      });
       res.render("feed.ejs", { posts: posts });
+      console.log(res);
     } catch (err) {
       console.log(err);
     }
