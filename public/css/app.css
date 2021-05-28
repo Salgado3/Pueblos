@@ -5,7 +5,7 @@ body {
 }
 
 .profile {
-  background: rgba(143, 135, 135, 0.5);
+  background: rgba(21, 169, 232, 0.5);
   margin-bottom: 5%;
 }
 
@@ -13,6 +13,7 @@ body {
   background: rgba(64, 74, 165, 0.5);
 }
 
+/* overlay hover box */
 .image {
   position: relative;
   max-width: 400px;
@@ -72,4 +73,18 @@ body {
 .image__description {
   font-size: 1.25em;
   margin-top: 0.25em;
+}
+
+/* Pueblo post page style */
+.puebloPost {
+  border: 2px red solid;
+  color: rgb(232, 44, 75);
+  text-justify: auto;
+  background: rgba(21, 169, 232, 0.5);
+  margin-bottom: 5%;
+}
+
+.puebloPostContainer {
+  display: flex;
+  justify-content: center;
 }
