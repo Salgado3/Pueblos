@@ -8,7 +8,7 @@
     <img class="img-fluid" src="<%= post.image%>" />
     <div class="row justify-content-between">
       <h2 class="puebloPost"><%= post.description %></h2>
-      <form
+      <!-- <form
         class="col-1"
         action="/post/likePost/<%= post.id %>?_method=PUT"
         method="POST"
@@ -16,7 +16,7 @@
         <button class="btn btn-primary fa fa-heart" type="submit"></button>
       </form>
       <h3 class="col-3">Likes: <%= post.likes %></h3>
-      <%if(post.user == user.id){ %>
+      <%if(post.user == user.id){ %> -->
       <form
         action="/post/deletePost/<%= post.id %>?_method=DELETE"
         method="POST"
@@ -31,8 +31,10 @@
       <p><%= post.caption %></p>
     </div>
     <div class="col-6 mt-5">
-      <a class="btn btn-primary" href="/profile">Return to Profile</a>
-      <a class="btn btn-primary" href="/feed">Return to Feed</a>
+      <!-- <a class="btn btn-primary" href="/profile">Return to Profile</a> -->
+      <a class="btn btn-primary row justify-content-center" href="/feed"
+        >Return to Search</a
+      >
     </div>
   </div>
 </div>

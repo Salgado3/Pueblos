@@ -77,9 +77,10 @@ body {
 
 /* Pueblo post page style */
 .puebloPost {
-  border: 2px red solid;
-  color: rgb(232, 44, 75);
+  color: black;
   text-align: center;
+  font-family: "Arial Narrow Bold", sans-serif;
+  font-weight: 400;
   background: rgba(21, 169, 232, 0.5);
   margin-bottom: 5%;
 }
