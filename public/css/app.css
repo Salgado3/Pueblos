@@ -79,7 +79,7 @@ body {
 .puebloPost {
   border: 2px red solid;
   color: rgb(232, 44, 75);
-  text-justify: auto;
+  text-align: center;
   background: rgba(21, 169, 232, 0.5);
   margin-bottom: 5%;
 }

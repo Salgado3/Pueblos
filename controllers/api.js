@@ -6,7 +6,7 @@ module.exports = {
     const airportCode = req.body;
     // console.log(airportCode);
     try {
-      console.log(airportCode, "hello controller");
+      console.log(airportCode, "api controller working");
       const posts = await Post.find({
         airportId: req.body.airportId,
       });
