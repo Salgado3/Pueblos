@@ -59,6 +59,7 @@ app.use("/", mainRoutes);
 app.use("/post", postRoutes);
 app.use("/api", apiRoutes);
 //Server Running
-app.listen(process.env.PORT, () => {
-  console.log("Server is running, you better catch it!");
+
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
