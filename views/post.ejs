@@ -5,7 +5,9 @@
   <div class="col-6">
     <h2 class="puebloPost">Pueblo: <%= post.title%></h2>
     <h3 class="puebloPost">Airport: <%=post.airportId%></h3>
-    <img class="img-fluid" src="<%= post.image%>" />
+    <a href="<%= post.photobyURL%>">
+      <img class="img-fluid" src="<%= post.image%>" />
+    </a>
     <div class="row justify-content-between">
       <h2 class="puebloPost"><%= post.description %></h2>
       <!-- <form

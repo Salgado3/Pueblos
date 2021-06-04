@@ -37,8 +37,11 @@ module.exports = {
       await Post.create({
         title: req.body.title,
         image: result.secure_url,
+        photoBy: req.body.photoBy,
+        photoByUrl: req.body.photoByUrl,
         cloudinaryId: result.public_id,
         description: req.body.description,
+        descriptionUrl: req.body.descriptionUrl,
         likes: 0,
         airportId: req.body.airportId,
         user: req.user.id,

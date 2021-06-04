@@ -9,11 +9,23 @@ const PostSchema = new mongoose.Schema({
     type: String,
     require: true,
   },
+  photoBy: {
+    type: String,
+    require: false,
+  },
+  photoByUrl: {
+    type: String,
+    require: false,
+  },
   cloudinaryId: {
     type: String,
     require: true,
   },
   description: {
+    type: String,
+    required: true,
+  },
+  descriptionUrl: {
     type: String,
     required: true,
   },
