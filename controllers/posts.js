@@ -6,7 +6,6 @@ module.exports = {
   getProfile: async (req, res) => {
     try {
       const posts = await Post.find({ _id: req.user.bookmark });
-      console.log(posts);
       res.render("profile.ejs", { posts: posts, user: req.user });
     } catch (err) {
       console.log(err);
