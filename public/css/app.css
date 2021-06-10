@@ -11,15 +11,13 @@ body {
 
 #feed {
   background: rgba(64, 74, 165, 0.5);
-  display: flex;
 }
 
 /* overlay hover box */
 .image {
-  display: flex;
   position: relative;
-  max-width: 450px;
-  max-height: 450px;
+  max-width: 400px;
+  max-height: 400px;
 }
 .image:hover {
   transform: scale(1.025);
