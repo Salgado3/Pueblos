@@ -95,3 +95,11 @@ body {
   opacity: 0.75;
   transform: scale(1.025);
 }
+
+#intro {
+  margin-top: 5%;
+  color: black;
+  font-size: 1.25em;
+  background: blanchedalmond;
+  opacity: 0.8;
+}
