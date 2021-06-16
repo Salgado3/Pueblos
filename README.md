@@ -4,7 +4,7 @@ Ever visited Mexico or thought about visiting? If you are like a lot of people (
 
 **Link to project:** https://pueblosmagicosmvp.herokuapp.com/
 
-![photo of GTO and Jaime](https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767998/PueblosWebsitePhotosBackground/GTOandMe_agrue5.jpg =250x250)
+![photo of GTO and Jaime](https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767998/PueblosWebsitePhotosBackground/GTOandMe_agrue5.jpg)
 
 ## How It's Made:
 
