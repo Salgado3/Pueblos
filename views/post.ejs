@@ -11,9 +11,16 @@
     <img class="img-fluid" src="<%= post.image%>" />
 
     <div class="row justify-content-between">
-      <a href="<%=post.descriptionUrl%>" target="_blank">
-        <h2 class="puebloPost"><%= post.description %></h2>
-      </a>
+      <div>
+        <a
+          class="descriptionLearnMore"
+          href="<%=post.descriptionUrl%>"
+          target="_blank"
+        >
+          <h2 class="puebloPost"><%= post.description %></h2>
+        </a>
+        <div class="descriptionLearnMore__overlay">Learn more</div>
+      </div>
       <form
         class="col-1"
         action="/post/likePost/<%= post.id %>?_method=PUT"

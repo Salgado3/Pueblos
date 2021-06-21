@@ -1,17 +1,18 @@
-.loginTitle a {
+.loginTitle {
   color: rgb(221, 124, 140);
-  font-size: 2em;
-  font-family: "Pattaya", sans-serif;
+
+  width: auto;
   background: rgb(99, 194, 194);
-  opacity: 0.9;
+  font-size: 4rem;
+  text-decoration: none;
+  font-family: "Pattaya", sans-serif;
 }
 
-span {
-  color: (221, 124, 140);
-  font-family: "Pattaya", sans-serif;
-  font-size: 2em;
-  background: rgb(99, 194, 194);
-  opacity: 0.9;
+.loginTitleDiv {
+  opacity: 0.95;
+  background-size: cover;
+  display: flexbox;
+  justify-content: center;
 }
 
 .btn {

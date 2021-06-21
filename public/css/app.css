@@ -90,6 +90,14 @@ body {
   justify-content: center;
 }
 
+.descriptionLearnMore {
+  border: 1px solid red;
+}
+
+.descriptionLearnMore:hover {
+  transform: scale(1.025);
+}
+
 /* profile page  */
 .profileImg:hover {
   opacity: 0.75;
