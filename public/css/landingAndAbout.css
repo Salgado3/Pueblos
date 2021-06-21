@@ -1,6 +1,7 @@
 body {
   background-image: url("https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767760/PueblosWebsitePhotosBackground/GtoBlueYellow_f8nnbg.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: #dddddd;
 }
 
