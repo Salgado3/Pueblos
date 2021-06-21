@@ -119,7 +119,9 @@
 <button type="submit" class="btn btn-outline-info airbtn" >Submit</button></form>
 </div>
 
+<% if (posts.length <= 0) { %>
 
+  <% }else{%>
   <div class="container" id="feed">
     <div class="row justify-content-center mt-5">
       <ul class="row list-unstyled">
@@ -139,4 +141,5 @@
         </ul>
     </div>
   </div>  
+  <% } %>
 <%- include('partials/footer') -%>

@@ -8,6 +8,7 @@
   text-decoration: none;
   font-family: "Pattaya", sans-serif;
   justify-content: center;
+  border-radius: 5px 5px;
 }
 
 .loginTitleDiv {
