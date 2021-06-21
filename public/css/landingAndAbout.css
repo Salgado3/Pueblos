@@ -11,11 +11,13 @@ body {
   font-size: 1.25em;
   background: blanchedalmond;
   opacity: 0.9;
+  border: 2.5px solid black;
 }
 .welcome {
   color: rgb(8, 24, 27);
   margin: auto;
   padding-left: 2.5%;
+  font-family: sans-serif;
 }
 
 .welcomePar {
@@ -23,4 +25,23 @@ body {
   color: black;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  font-family: sans-serif;
+}
+
+/* sign up page  */
+.form-label {
+  color: black;
+  background: blanchedalmond;
+  padding-left: 1.25%;
+  padding-right: 1.25%;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.emailSharing {
+  color: white;
+  background: rgb(129, 111, 111);
+  display: inline;
 }
