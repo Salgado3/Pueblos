@@ -4,7 +4,7 @@ Ever visited Mexico or thought about visiting? If you are like a lot of people (
 
 **Link to project:** https://pueblosmagicosmvp.herokuapp.com/
 
-![alt tag](https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767998/PueblosWebsitePhotosBackground/GTOandMe_agrue5.jpg)
+![photo of GTO and Jaime](https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767998/PueblosWebsitePhotosBackground/GTOandMe_agrue5.jpg)
 
 ## How It's Made:
 
@@ -12,9 +12,12 @@ Ever visited Mexico or thought about visiting? If you are like a lot of people (
 
 I created the API sourcing photos and articles from https://en.wikipedia.org/ and https://www.flickr.com/explore mainly. I used MongoDB to store the description, wiki links, photo links, and airport codes. The photos are stored on https://cloudinary.com. I utilized EJS to load the photos and photo information based on the airport code submitted. JS makes it work and Express does all the heavy lifting on the HTTP requests. Node Js for the backend.
 
+I chose to use MongoDB because it is a NoSQL database and works well with JS and Node. The database will remain static for the most part (with occasional updates). I utilized Mongoose for my user and pueblos schemas. Users are able to bookmark their favorite towns by clicking the heart icon on the front end. On the backend, the user db is tracking the unique id of the pueblo found in the pueblo db. Passport was used for the Auth.
+
+
 
 ## Optimizations
-Eventually I would love to add more information to each town. I would love to have routes set up to show all the available ways to reach these towns. While the airport listed on the page is only one way of getting there, there are various methods of reaching these towns. Also, I would love to showcase more photos of these towns that are provided by the community. The image sizing and CSS will always be an ongoing project. (Are you really ever done with the CSS and making it look "just right"?). Eventually I will move from EJS to React in order to render the photo components of the feed instead of a full page reload.
+Eventually I would love to add more information to each town. I would love to have routes set up to show all the available ways to reach these towns. While the airport listed on the page is only one way of getting there, there are various methods of reaching these towns. Also, I would love to showcase more photos of these towns that are provided by the community. The image sizing and CSS will always be an ongoing project. (Are you really ever done with the CSS and making it look "just right"?). Eventually I will move from EJS to React in order to render the photo components of the feed instead of a full page reload. I will implement Google Oauth in the near future to make signing up even easier.
 
 
 
