@@ -14,6 +14,10 @@ body {
   background: rgba(64, 74, 165, 0.5);
 }
 
+.postButton {
+  margin-right: 1.5%;
+}
+
 /* overlay hover box */
 .image {
   position: relative;
@@ -91,13 +95,7 @@ body {
   justify-content: center;
 }
 
-.descriptionLearnMore {
-  border: 1px solid red;
-}
 
-.descriptionLearnMore:hover {
-  transform: scale(1.025);
-}
 
 /* profile page  */
 .profileImg:hover {
