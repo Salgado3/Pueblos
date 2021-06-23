@@ -28,6 +28,14 @@ body {
   padding-right: 2.5%;
   font-family: sans-serif;
 }
+.logoutButton {
+  margin-top: 5%;
+}
+
+.userInfo{
+  color: #914E27;
+  font-size: 1.25rem;
+}
 
 /* sign up page  */
 .form-label {
