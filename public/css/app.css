@@ -15,7 +15,7 @@ body {
 }
 
 .postButton {
-  margin-right: 1.5%;
+  margin-right: 10.5%;
 }
 
 /* overlay hover box */
@@ -94,7 +94,6 @@ body {
   display: flex;
   justify-content: center;
 }
-
 
 
 /* profile page  */
