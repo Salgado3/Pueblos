@@ -14,7 +14,7 @@ I created the API sourcing photos and articles from https://en.wikipedia.org/ an
 
 I chose to use MongoDB because it is a NoSQL database and works well with JS and Node. The database will remain static for the most part (with occasional updates). I utilized Mongoose for my user and pueblos schemas. Users are able to bookmark their favorite towns by clicking the heart icon on the front end. On the backend, the user db is tracking the unique id of the pueblo found in the pueblo db. Passport was used for the Auth.
 
-![app in action gif](/public/imgs/Pueblos.gif) / ![](Pueblos.gif)
+![app in action gif](/public/imgs/Pueblos.gif)
 
 ## Optimizations
 Eventually I would love to add more information to each town. I would love to have routes set up to show all the available ways to reach these towns. While the airport listed on the page is only one way of getting there, there are various methods of reaching these towns. Also, I would love to showcase more photos of these towns that are provided by the community. The image sizing and CSS will always be an ongoing project. (Are you really ever done with the CSS and making it look "just right"?). Eventually I will move from EJS to React in order to render the photo components of the feed instead of a full page reload. I will implement Google Oauth in the near future to make signing up even easier.
