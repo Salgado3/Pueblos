@@ -1,7 +1,8 @@
-body {
-  background-image: url("https://res.cloudinary.com/pueblosmagicos/image/upload/v1621634891/iaybdvg6rljwirepux1i.jpg");
+body{
+  background-image: url("https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767821/PueblosWebsitePhotosBackground/GtoColorWall_xm9tvp.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 100%;
   color: #dddddd;
 }
 

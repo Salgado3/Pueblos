@@ -1,8 +1,9 @@
 <%- include('partials/header') -%>
-<link rel="stylesheet" href="/css/style.css"/>
+
 <!-- adding form for airport -->
+
 <div class="airportFeedForm">
-<form action="/api/getAirport" method="POST" >
+<form action="/api/getAirport" method="POST" id="formAirCodes" >
   <!-- <label for="Airport">Choose an Airport:</label> -->
   <select name="airportId" id="dropDown">  
     <option>Select an Airport</option>
@@ -114,13 +115,14 @@
     <!-- <option value="ZMM">Zamora National Airport</option>
     <option value="MMZP">Zapopan Air Force Base Num 5</option>  -->
 </select>
-<button type="submit" class="btn btn-outline-info airbtn" >Submit</button></form>
+</form>
+<button type="submit" form="formAirCodes" class="btn btn-outline-info airbtn" >Submit</button>
 </div>
-
+<div class="container" id="feed">
 <% if (posts.length <= 0) { %>
 
   <% }else{%>
-  <div class="container" id="feed">
+  
     <div class="row justify-content-center mt-5">
       <ul class="row list-unstyled">
         <% for(var i=0; i<posts.length; i++) {%>
@@ -138,6 +140,7 @@
         <% } %>
         </ul>
     </div>
+    <% } %>
   </div>  
-  <% } %>
+
 <%- include('partials/footer') -%>
