@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url("https://res.cloudinary.com/pueblosmagicos/image/upload/v1624633109/PueblosWebsitePhotosBackground/gto_sky_and_church_xoyenm.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -17,6 +17,7 @@ body{
 
 .postButton {
   margin-right: 10.5%;
+  padding-bottom: 5%;
 }
 
 /* overlay hover box */
@@ -88,14 +89,14 @@ body{
   font-family: "Arial Narrow Bold", sans-serif;
   font-weight: 400;
   background: rgba(21, 169, 232, 0.5);
-  margin-bottom: 5%;
+  margin: 2.5% 0%;
+  padding: 1% 1%;
 }
 
 .puebloPostContainer {
   display: flex;
   justify-content: center;
 }
-
 
 /* profile page  */
 .profileImg:hover {

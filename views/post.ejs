@@ -2,7 +2,11 @@
 <link rel="stylesheet" href="/css/app.css" />
 
 <div class="row justify-content-center mt-5">
+  <!-- <div class="container col-6 mt-5"></div> -->
   <div class="col-6">
+    <a class="btn btn-primary btn-lg" href="/profile">Return to Profile</a>
+    <a class="btn btn-primary btn-lg" href="/feed">Return to Search</a>
+
     <h2 class="puebloPost">Pueblo: <%= post.title%></h2>
     <h3 class="puebloPost">Airport: <%=post.airportId%></h3>
     <a href="<%=post.photoByUrl%>" target="_blank">
@@ -42,12 +46,6 @@
 
     <div class="col-3 mt-5">
       <p><%= post.caption %></p>
-    </div>
-    <div class="col-6 mt-5">
-      <a class="btn btn-primary postButton" href="/profile">Return to Profile</a>
-      <a class="btn btn-primary row justify-content-center postButton" href="/feed"
-        >Return to Search</a
-      >
     </div>
   </div>
 </div>
