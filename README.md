@@ -25,7 +25,7 @@ Eventually I would love to add more information to each town. I would love to ha
 
 Where do I begin...
 
-I was motivated to build this website for the love I have for Mexico. Oftentimes, people who are not familiar with the country have these impressions of Mexico based on what they see on TV or hear in the media. I found it difficult to find new places to visit in Mexico without having background knowledge of where to go. My hope for the website is to allow user's curiosity to guide their next adventure. I hope that people can see the beauty of Mexico and feel the urge to come visit and explore.
+I was motivated to build this website for the love I have for Mexico. Oftentimes, people who are not familiar with the country have these impressions of Mexico based on what they see on TV or hear in the media. I found it difficult to find new places to visit in Mexico without having background knowledge of where to go. My hope for the website is to allow users' curiosity to guide their next adventure. I hope that people can see the beauty of Mexico and feel the urge to come visit and explore.
 
 On the technical side, I did get a better feel for the MVC model. I had to create a couple of new interfaces and make sure that the frontend was communicating with the backend. The database does have a user model and post (pueblos) model that need to communicate with each other (for the profile page and booked marked pueblos).
 
