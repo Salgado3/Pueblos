@@ -13,6 +13,7 @@ body {
 
 #feed {
   background: rgba(64, 74, 165, 0.5);
+  background-size: 100%;
 }
 
 .postButton {

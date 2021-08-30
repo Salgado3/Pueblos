@@ -30,9 +30,12 @@
 }
 
 #map {
+  margin: auto;
   width: 95%;
+  border: 3px solid rgb(221, 124, 140);
+  padding: 10px;
   height: 450px;
-  background: grey;
+
 }
 
 #panel {
