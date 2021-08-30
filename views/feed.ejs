@@ -1,7 +1,6 @@
 <%- include('partials/header') -%>
 
 <!-- adding form for airport -->
-
 <div class="airportFeedForm">
 <form action="/api/getAirport" method="POST" id="formAirCodes" >
   <!-- <label for="Airport">Choose an Airport:</label> -->
@@ -121,9 +120,15 @@
 <div class="container" id="feed">
  
 
-  
 <% if (posts.length <= 0) { %>
-
+  <div id='map' class="row justify-content-center mt-5"></div>
+  <script>
+  mapboxgl.accessToken = '<%=process.env.MapBox_API_KEY%>';
+  var map = new mapboxgl.Map({
+  container: 'map',
+  style: 'mapbox://styles/mapbox/streets-v11'
+  });
+  </script>
   <% }else{%>
   
     <div class="row justify-content-center mt-5">
@@ -145,5 +150,4 @@
     </div>
     <% } %>
   </div>  
-
 <%- include('partials/footer') -%>

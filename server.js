@@ -12,6 +12,8 @@ const mainRoutes = require("./routes/main");
 const postRoutes = require("./routes/posts");
 const apiRoutes = require("./routes/api");
 
+
+
 //Use .env file in config folder
 require("dotenv").config({ path: "./config/.env" });
 
@@ -58,8 +60,9 @@ app.use(flash());
 app.use("/", mainRoutes);
 app.use("/post", postRoutes);
 app.use("/api", apiRoutes);
-//Server Running
 
+
+//Server Running
 app.listen(process.env.PORT || 8000, () => {
   console.log(`Server is running on port ${process.env.PORT}`);
 });
