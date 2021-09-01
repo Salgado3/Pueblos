@@ -34,12 +34,18 @@
 
 #map {
   margin: auto;
-  width: 100%;
+  width: 80%;
   height: 95%;
   border: 3px solid rgb(221, 124, 140);
   padding: 2% 2%;
   height: 450px;
 
+}
+
+.svg {
+  margin-left: 10%;
+  display: inline;
+  background: rgb(59, 56, 56);
 }
 
 #panel {
