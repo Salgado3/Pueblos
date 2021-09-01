@@ -131,13 +131,16 @@
   mapboxgl.accessToken = '<%=process.env.MapBox_API_KEY%>';
   var map = new mapboxgl.Map({
   container: 'map',
-  style: 'mapbox://styles/mapbox/streets-v11',
+  style: 'process.env.MapBox_style',
   center: [-100.98789081060005,21.946470732661936],
   zoom: 4,
   attributionControl: false
   });
   map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
+
+
   </script>
+  <div>Flag SVG icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
   <% }else{%>
   
     <div class="row justify-content-center mt-5">
