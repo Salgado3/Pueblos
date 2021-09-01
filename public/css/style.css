@@ -14,7 +14,7 @@
 
 .loginTitleDiv {
   opacity: 0.85;
-  margin-top: 1.5%;
+  margin-top: 1%;
   display: flexbox;
   justify-content: center;
 
@@ -28,7 +28,7 @@
 
 /* feed page */
 .airportFeedForm {
-  margin-top: 2.5%;
+  margin-top: 1.5%;
   margin-left: 1.5%;
 }
 
