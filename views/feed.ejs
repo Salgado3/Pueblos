@@ -127,6 +127,7 @@
 <% if (posts.length <= 0) { %>
   <div id='map' class="row justify-content-center mt-5"></div>
   <script>
+    //setting up map API and centering on Mexico
   mapboxgl.accessToken = '<%=process.env.MapBox_API_KEY%>';
   var map = new mapboxgl.Map({
   container: 'map',
@@ -135,10 +136,36 @@
   zoom: 4,
   attributionControl: false
   });
-  map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
+  // map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
 
+  //adding event listener on map
+  map.on('click', ({ point }) => {
+    
+  // If the user clicked on one of your markers, get its information.
+  const features = map.queryRenderedFeatures(point, {
+    layers: ['Pueblos'] // replace with your layer name
+  });
+  if (!features.length) {
+    return;
+  }
+  const feature = features[0];
+  console.log(point, "it's clicked")
+
+    // Create a popup, specify its options 
+    // and properties, and add it to the map.
+
+const popup = new mapboxgl.Popup({ offset: [0, -15] })
+  .setLngLat(feature.geometry.coordinates)
+  .setHTML(
+    `<h3>${feature.properties.name}</h3><p>${feature.properties.desciption}</p>`
+  )
+  .addTo(map);
+
+});
   </script>
+
   <section class="svg">Flag SVG icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></section>
+
   <% }else{%>
     <div class="container" id="feed">
     <div class="row justify-content-center mt-5">

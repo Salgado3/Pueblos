@@ -24,6 +24,7 @@ body {
 
 /* overlay hover box */
 .image {
+  margin: auto;
   position: relative;
   max-width: 400px;
   max-height: 400px;
@@ -51,7 +52,7 @@ body {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: opacity 0.55s;
 }
 .image__overlay--blur {
   backdrop-filter: blur(5px);
@@ -63,7 +64,7 @@ body {
 
 .image__overlay > * {
   transform: translateY(20px);
-  transition: transform 0.25s;
+  transition: transform 0.55s;
 }
 
 .image__overlay:hover {
