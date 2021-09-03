@@ -125,6 +125,14 @@
  
 
 <% if (posts.length <= 0) { %>
+  <!-- popup Marker -->
+  <style>
+    .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+    </style>
+
   <div id='map' class="row justify-content-center mt-5"></div>
   <script>
     //setting up map API and centering on Mexico
@@ -133,35 +141,48 @@
   container: 'map',
   style: '<%=process.env.MapBox_style%>',
   center: [-100.98789081060005,21.946470732661936],
-  zoom: 4,
+  zoom: 10.7,
   attributionControl: false
   });
   // map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
 
-  //adding event listener on map
-  map.on('click', ({ point }) => {
-    
+
+// adding pop up
+
+map.on('click', ({ point }) => {
   // If the user clicked on one of your markers, get its information.
   const features = map.queryRenderedFeatures(point, {
-    layers: ['Pueblos'] // replace with your layer name
+    layers: ['pueblos'] // replace with your layer name
   });
   if (!features.length) {
     return;
   }
   const feature = features[0];
-  console.log(point, "it's clicked")
 
-    // Create a popup, specify its options 
-    // and properties, and add it to the map.
-
-const popup = new mapboxgl.Popup({ offset: [0, -15] })
+/* 
+    Create a popup, specify its options 
+    and properties, and add it to the map.
+  */
+  const popup = new mapboxgl.Popup({ offset: [0, -15] })
   .setLngLat(feature.geometry.coordinates)
   .setHTML(
-    `<h3>${feature.properties.name}</h3><p>${feature.properties.desciption}</p>`
+    `<h3>${feature.properties.name}</h3><p>${feature.properties.airport}</p>`
   )
   .addTo(map);
-
+ console.log(name)
 });
+
+ 
+// Change the cursor to a pointer when the mouse is over the places layer.
+map.on('mouseenter', 'places', () => {
+map.getCanvas().style.cursor = 'pointer';
+});
+ 
+// Change it back to a pointer when it leaves.
+map.on('mouseleave', 'places', () => {
+map.getCanvas().style.cursor = '';
+});
+
   </script>
 
   <section class="svg">Flag SVG icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></section>
