@@ -40,7 +40,6 @@
   width: 80%;
   height: 95%;
   border: 3px solid rgb(221, 124, 140);
-  /* padding: 2% 2%; */
   height: 450px;
 
 }
@@ -57,8 +56,10 @@ body {
 }
 
 .mapboxgl-popup {
-max-width: 200px;
-color: red;
+
+color: rgb(221, 124, 140);
+padding: .2px;
+box-shadow: 2px 4px #888888;
 font: 12px/14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 /* ______________ */
