@@ -32,16 +32,36 @@
   margin-left: 1.5%;
 }
 
-#map {
+/* map set up */
+#mapContainer {
+  position: relative;
   margin: auto;
+  margin-top: 2.5%;
   width: 80%;
   height: 95%;
   border: 3px solid rgb(221, 124, 140);
-  padding: 2% 2%;
+  /* padding: 2% 2%; */
   height: 450px;
 
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
+color: red;
+font: 12px/14px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+/* ______________ */
 .svg {
   margin-left: 10%;
   display: inline;

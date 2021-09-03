@@ -126,14 +126,13 @@
 
 <% if (posts.length <= 0) { %>
   <!-- popup Marker -->
-  <style>
-    .mapboxgl-popup {
-    max-width: 400px;
-    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    }
-    </style>
+  
+<div id="mapContainer">
+  <div id='map' ></div>
 
-  <div id='map' class="row justify-content-center mt-5"></div>
+</div>
+  
+
   <script>
     //setting up map API and centering on Mexico
   mapboxgl.accessToken = '<%=process.env.MapBox_API_KEY%>';
@@ -141,10 +140,10 @@
   container: 'map',
   style: '<%=process.env.MapBox_style%>',
   center: [-100.98789081060005,21.946470732661936],
-  zoom: 10.7,
-  attributionControl: false
+  zoom: 4,
+  attributionControl: true
   });
-  // map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
+  map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
 
 
 // adding pop up
@@ -172,16 +171,6 @@ map.on('click', ({ point }) => {
  console.log(name)
 });
 
- 
-// Change the cursor to a pointer when the mouse is over the places layer.
-map.on('mouseenter', 'places', () => {
-map.getCanvas().style.cursor = 'pointer';
-});
- 
-// Change it back to a pointer when it leaves.
-map.on('mouseleave', 'places', () => {
-map.getCanvas().style.cursor = '';
-});
 
   </script>
 
