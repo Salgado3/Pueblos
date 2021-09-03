@@ -6,9 +6,14 @@ Ever visited Mexico or thought about visiting? If you are like a lot of people (
 
 ![app in action gif](/public/imgs/Pueblos.gif)
 
+
+
+**Update Version 2: Map added**
+![app in action gif](/public/imgs/mapPopUp.gif)
+
 ## How It's Made:
 
-**Tech used:** EJS, CSS, JavaScript, Bootstrap, Node.js, Express, MongoDB
+**Tech used:** EJS, CSS, JavaScript, Bootstrap, Node.js, Express, MongoDB, Mapbox
 
 I created the API sourcing photos and articles from https://en.wikipedia.org/ and https://www.flickr.com/explore mainly. I used MongoDB to store the description, wiki links, photo links, and airport codes. The photos are stored on https://cloudinary.com. I utilized EJS to load the photos and photo information based on the airport code submitted. JS makes it work and Express does all the heavy lifting on the HTTP requests. Node Js for the backend.
 
