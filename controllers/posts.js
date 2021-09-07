@@ -30,28 +30,7 @@ module.exports = {
       console.log(err);
     }
   },
-  createPost: async (req, res) => {
-    try {
-      // Upload image to cloudinary
-      const result = await cloudinary.uploader.upload(req.file.path);
-
-      await Post.create({
-        title: req.body.title,
-        image: result.secure_url,
-        photoBy: req.body.photoBy,
-        photoByUrl: req.body.photoByUrl,
-        cloudinaryId: result.public_id,
-        description: req.body.description,
-        descriptionUrl: req.body.descriptionUrl,
-        airportId: req.body.airportId,
-        user: req.user.id,
-      });
-      console.log("Post has been added!");
-      res.redirect("/profile");
-    } catch (err) {
-      console.log(err);
-    }
-  },
+ 
   likePost: async (req, res) => {
     try {
       await User.findOneAndUpdate(

@@ -116,7 +116,7 @@
     <option value="MMZP">Zapopan Air Force Base Num 5</option>  -->
 </select>
 </form>
-<button type="submit" form="formAirCodes" class="btn btn-primary airbtn btn-lg" >Submit</button>
+<button type="submit" form="formAirCodes" id="formAirCodes" class="btn btn-primary airbtn btn-lg">Submit</button>
 <% if (posts.length > 0) { %>
 <a class="btn btn-primary btn-lg" href="/feed">Back to Map</a>
 <% } %>
@@ -131,7 +131,7 @@
   <div id='map' ></div>
 
 </div>
-  
+
 
   <script>
     //setting up map API and centering on Mexico
@@ -162,15 +162,18 @@ map.on('click', ({ point }) => {
     Create a popup, specify its options 
     and properties, and add it to the map.
   */
+ 
+
   const popup = new mapboxgl.Popup({ offset: [0, -15] })
   .setLngLat(feature.geometry.coordinates)
   .setHTML(
-    `<h3>${feature.properties.name}</h3><p>${feature.properties.airport}</p>`
+    `
+    <button type="submit" form="formAirCodesMap" id="formAirCodesMap">${feature.properties.name}</button>
+    <form>${feature.properties.airport}, ${feature.properties.dbId}</form>`
   )
   .addTo(map);
  console.log(name)
 });
-
 
   </script>
 

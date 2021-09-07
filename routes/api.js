@@ -5,5 +5,7 @@ const apiController = require("../controllers/api");
 const { ensureAuth, ensureGuest } = require("../middleware/auth");
 
 router.post("/getAirport", apiController.getAirport);
+//map
+router.post("/getAirportMap", apiController.getAirportMap);
 
 module.exports = router;
