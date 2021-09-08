@@ -145,7 +145,8 @@
   });
   map.addControl(new mapboxgl.AttributionControl(), 'top-left');  
 
-
+// Add zoom and rotation controls to the map.
+map.addControl(new mapboxgl.NavigationControl())
 // adding pop up
 
 map.on('click', ({ point }) => {
