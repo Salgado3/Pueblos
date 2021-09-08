@@ -18,10 +18,10 @@ module.exports = {
   },
 
   getAirportMap: async (req, res) => {
-    const airportCode = req.body;
+   
     // console.log(airportCode);
     try {
-      console.log(airportCode, "Map api controller working", req.body);
+      console.log("Map api controller working", req.body);
       const posts = await Post.find({
         airportId: req.body.airportId,
       });
