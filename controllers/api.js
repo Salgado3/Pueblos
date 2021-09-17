@@ -23,7 +23,7 @@ module.exports = {
     try {
       console.log("Map api controller working", req.body);
       const posts = await Post.find({
-        airportId: req.body.airportId,
+        airportId: req.body.formAirCodesMap,
       });
       res.render("feed.ejs", { posts: posts });
       console.log(posts);
