@@ -17,7 +17,7 @@ module.exports = {
         airportId: req.body.airportId,
       });
       res.render("feed.ejs", { posts: posts });
-      console.log(res);
+      
     } catch (err) {
       console.log(err);
     }

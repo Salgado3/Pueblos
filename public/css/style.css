@@ -44,6 +44,15 @@
 
 }
 
+#formAirCodesMap{
+  color: red;
+}
+.mapParagraph {
+  margin-top: 10%;
+  width: auto;
+  color: black;
+}
+
 body {
   margin: 0;
   padding: 0;
