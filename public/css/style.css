@@ -12,6 +12,11 @@
   border-radius: 25% 25%;
 }
 
+.loginTitle:hover{
+/* work on this for profile */
+
+}
+
 .loginTitleDiv {
   opacity: 0.85;
   margin-top: 1%;
