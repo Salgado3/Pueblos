@@ -8,7 +8,7 @@ Ever visited Mexico or thought about visiting? If you are like a lot of people (
 
 
 
-**Version 2: Map added**
+**Version 2: Map added using Mapbox API**
 
 ![app in action gif](/public/imgs/mapPopUp.gif)
 
