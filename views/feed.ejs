@@ -170,12 +170,12 @@ map.on('click', ({ point }) => {
     `
     <form id="formAirCodesMap" method="POST" action="/api/getAirportMap" id="formAirCodesMap">
       <button type="submit" form="formAirCodesMap" id="formAirCodesMap" class="btn btn-link">
-        <select  name="formAirCodesMap" id="dropDown" class="btn btn-link"> 
+        <select  name="formAirCodesMap" id="dropDown" class="btn btn-link" > 
         <option value="${feature.properties.airport}">${feature.properties.name}</option>
         </select>
         </button>
     </form>
-    <p class = "mapParagraph">${feature.properties.airport}</p>
+    <p class = "mapParagraph">AIRPORT: ${feature.properties.airport}</p>
     `
   )
   .addTo(map);
