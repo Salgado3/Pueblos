@@ -107,6 +107,10 @@ body {
   display: flex;
   justify-content: center;
 }
+.puebloTitle {
+  font-size: 3.5em;
+  text-shadow: 2px 2px #867f7f;
+}
 
 .post-buttons {
   display: flex;
