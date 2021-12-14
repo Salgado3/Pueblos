@@ -165,6 +165,25 @@ background-size: cover;
   text-shadow: 2px 2px #867f7f;
 }
 
+/* feed page */
+.body {
+  height: auto;
+}
+#dropDown{
+  width: 80%;
+  margin: auto;
+}
+#dropDown option{
+  width: 80%;
+  margin: auto;
+}
+.mapContainer{
+  width: 95%;
+}
+.map {
+  width: auto;
+}
+
 }
 
 
