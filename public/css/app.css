@@ -92,7 +92,7 @@ body {
   display: flex;
   background: cornsilk;
   flex-direction: column;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
 }
 .puebloPost {
   color: black;
@@ -120,9 +120,10 @@ body {
 }
 
 .descriptionLearnMore {
+  height: 375px;
   text-align: justify;
   text-justify: inter-word;
-  text-decoration: none;
+  overflow: scroll;
 }
 .postImgDiv{
 margin-top: .5%;
