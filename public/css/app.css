@@ -19,8 +19,8 @@ body {
 }
 
 .postButton {
-  margin-right: 10.5%;
-  padding-bottom: 5%;
+  margin-right: .5%;
+  padding-bottom: .5%;
 }
 
 /* overlay hover box */
@@ -84,16 +84,22 @@ body {
 .image__description {
   font-size: 1.25em;
   margin-top: 0.25em;
+ 
 }
 
 /* Pueblo post page style */
+.post-Container {
+  display: flex;
+  background: cornsilk;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
 .puebloPost {
   color: black;
   text-align: center;
   font-family: "Arial Narrow Bold", sans-serif;
   font-weight: bold;
-  background: rgba(21, 169, 232, 0.8);
-  margin: 2.5% 0%;
+  margin: .5% 0%;
   padding: 1% 1%;
 }
 
@@ -102,12 +108,23 @@ body {
   justify-content: center;
 }
 
+.post-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 1.5% 25%;
+}
 
+.descriptionLearnMore {
+  text-align: justify;
+  text-justify: inter-word;
+  text-decoration: none;
+}
 .postImgDiv{
-margin-top: 2.5%;
-margin-bottom: 2.5%;
-  width:  100%;
-  background-size: cover;
+margin-top: .5%;
+margin-bottom: .5%;
+width:  100%;
+background-size: cover;
 }
 .img-fluid{
   display: block;
@@ -120,6 +137,5 @@ margin-bottom: 2.5%;
 
 /* profile page  */
 .profileImg:hover {
-  opacity: 0.75;
   transform: scale(1.025);
 }
