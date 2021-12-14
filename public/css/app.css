@@ -108,7 +108,7 @@ body {
   justify-content: center;
 }
 .puebloTitle {
-  font-size: 3.5em;
+  font-size: 3.5rem;
   text-shadow: 2px 2px #867f7f;
 }
 
@@ -144,3 +144,27 @@ background-size: cover;
 .profileImg:hover {
   transform: scale(1.025);
 }
+
+
+@media screen and (max-width: 851px) {
+
+.image {
+  display: block;
+  width: 95%;
+  height: 200px;
+}
+
+.post-Container {
+  font-size: .5em;
+  width: 90%;
+}
+.post-buttons {
+  margin: .5%
+}
+.puebloTitle {
+  text-shadow: 2px 2px #867f7f;
+}
+
+}
+
+
