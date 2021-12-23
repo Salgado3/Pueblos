@@ -3,6 +3,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: #dddddd;
+  height: auto;
 }
 
 #intro {
