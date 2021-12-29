@@ -1,17 +1,15 @@
 body {
-  background-image: url("https://res.cloudinary.com/pueblosmagicos/image/upload/v1623767760/PueblosWebsitePhotosBackground/GtoBlueYellow_f8nnbg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #dddddd;
-  height: auto;
+  background-color: #fff9ef;
+  margin: 0;
+  padding: 0;
 }
 
 #intro {
-  margin-top: 5%;
+  margin: 5% 0%;
   padding-left: 2%;
   color: black;
-  font-size: 1.25em;
-  background: blanchedalmond;
+  font-size: 1.5em;
+  background: #2C9FF5;
   opacity: 0.9;
   border: 2.5px solid black;
 }
@@ -29,6 +27,17 @@ body {
   padding-right: 2.5%;
   font-family: sans-serif;
 }
+.demo {
+color: white;
+text-decoration: none;
+}
+.demo:active {
+  color: rgb(233, 38, 38);
+  text-decoration: underline;
+  }
+.demo:visited {
+  color: white;
+    }
 
 .userInfo{
   color: #914E27;
