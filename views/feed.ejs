@@ -192,10 +192,10 @@ map.on('click', ({ point }) => {
       <ul class="row list-unstyled" id="feed_ul_Background">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="col-lg-6 justify-content-between mt-5">
-            <a href="/post/<%= posts[i]._id%>" class="image__title">
+            <a href="/post/<%= posts[i]._id%>" class="image__title_anchor">
             <p class="image__title"><%= posts[i].title%></p>
                 <!-- <p class="image__description"><%= posts[i].caption%></p> -->
-              <img class="img-fluid image__img" src="<%= posts[i].image%>">
+              <img class="img-fluid feed_imgs" src="<%= posts[i].image%>">
             </a>
           
           </li>

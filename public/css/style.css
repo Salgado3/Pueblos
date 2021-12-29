@@ -1,5 +1,23 @@
+
+.loginTitleDiv {
+  opacity: 0.95;
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+
+}
+.loginTitle_anchor {
+text-decoration: none;
+padding: 0 2%;
+}
+
 .loginTitle {
-  color: rgb(221, 124, 140);
+  background-color: rgb(59, 56, 56);
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  font-size: 2.5rem;
+  border-radius: 25% 25%;
+  /* color: rgb(221, 124, 140);
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   display: inline;
   background: rgb(99, 194, 194);
@@ -9,17 +27,9 @@
   text-decoration: none;
   font-family: "Pattaya", sans-serif;
   justify-content: center;
-  border-radius: 25% 25%;
+  border-radius: 25% 25%; */
 }
 
-
-.loginTitleDiv {
-  opacity: 0.85;
-  margin-top: 1%;
-  display: flexbox;
-  justify-content: center;
-
-}
 
 .btn {
   background: rgb(221, 124, 140);
