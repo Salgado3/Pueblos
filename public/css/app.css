@@ -13,9 +13,13 @@ body {
 }
 
 #feed {
-  background: rgba(64, 74, 165, 0.5);
+  background: blanchedalmond;
   background-size: 80%;
   margin-bottom: 2.5%;
+}
+#feed_ul_Background {
+  background-color: blanchedalmond;
+  
 }
 
 .postButton {
@@ -23,69 +27,17 @@ body {
   padding-bottom: .5%;
 }
 
-/* overlay hover box */
-/* .image {
-  margin: auto;
-  position: relative;
-  max-width: 400px;
-  max-height: 400px;
-}
-.image:hover {
-  transform: scale(1.025);
-}
-
-.image__img {
-  display: flex;
-  width: 100%;
-}
-
-.image__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  color: #ffffff;
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.55s;
-}
-.image__overlay--blur {
-  backdrop-filter: blur(5px);
-}
-
-.image__overlay--primary {
-  background: #009578;
-}
-
-.image__overlay > * {
-  transform: translateY(20px);
-  transition: transform 0.55s;
-}
-
-.image__overlay:hover {
-  opacity: 1;
-  transform: scale(1.0125);
-}
-
-.image__overlay:hover > {
-  transform: translateY(0);
-}
 .image__title {
-  font-size: 2em;
+  color: black;
+  text-align: center;
+  font-family: "Arial Narrow Bold", sans-serif;
   font-weight: bold;
+  margin: .5% 0%;
+  padding: 1% 1%;
+  font-size: 2rem;
+  text-shadow: 1px 1px #867f7f;
+  text-decoration: none;
 }
-
-.image__description {
-  font-size: 1.25em;
-  margin-top: 0.25em;
- 
-} */
 
 /* Pueblo post page style */
 .post-Container {
@@ -169,6 +121,7 @@ background-size: cover;
 .body {
   height: auto;
 }
+
 #dropDown{ 
   width: 80%;
   margin: auto;

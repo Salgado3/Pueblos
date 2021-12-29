@@ -187,18 +187,15 @@ map.on('click', ({ point }) => {
   <section class="svg">Flag SVG icon made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></section>
 
   <% }else{%>
-    <div class="container" id="feed">
-    <div class="row justify-content-center mt-5">
-      <ul class="row list-unstyled">
+    <!-- <div class="container" > -->
+    <div class="row justify-content-center mt-5" id="feed">
+      <ul class="row list-unstyled" id="feed_ul_Background">
         <% for(var i=0; i<posts.length; i++) {%>
           <li class="col-lg-6 justify-content-between mt-5">
-           
-            <a href="/post/<%= posts[i]._id%>">
+            <a href="/post/<%= posts[i]._id%>" class="image__title">
+            <p class="image__title"><%= posts[i].title%></p>
+                <!-- <p class="image__description"><%= posts[i].caption%></p> -->
               <img class="img-fluid image__img" src="<%= posts[i].image%>">
-              <div class="image__overlay">
-                <div class="image__title"><%= posts[i].title%></div>
-                <p class="image__description"><%= posts[i].caption%></p>
-              </div>
             </a>
           
           </li>
@@ -206,5 +203,5 @@ map.on('click', ({ point }) => {
         </ul>
     </div>
     <% } %>
-  </div>  
+  <!-- </div>   -->
 <%- include('partials/footer') -%>
