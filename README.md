@@ -12,6 +12,11 @@ Ever visited Mexico or thought about visiting? If you are like a lot of people (
 
 ![app in action gif](/public/imgs/mapPopUp.gif)
 
+
+**Version 3: Cleaned up CSS + mobile responsive**
+
+![app in action gif](/public/imgs/pueblosV3.gif)
+
 ## How It's Made:
 
 **Tech used:** EJS, CSS, JavaScript, Bootstrap, Node.js, Express, MongoDB, Mapbox
