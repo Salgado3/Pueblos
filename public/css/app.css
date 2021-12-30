@@ -47,9 +47,10 @@ body{
 }
 .feed_imgs{ 
   border: 2px solid black;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 10px 10px 8px #747070;
+
   opacity: .9;
-  transition: .5s;
+  transition: 1s;
 }
 .feed_imgs:hover{ 
   border: 2px solid black;
@@ -136,9 +137,14 @@ background-size: cover;
   border: 1px solid black;
   transition: 1s;
 }
+.profileImg{
+  opacity: .9;
+  box-shadow: 10px 10px 8px #747070;
+}
 
 .profileImg:hover {
-  transform: scale(1.025);
+  opacity: 1;
+  transform: scale(1.0125, 1.0125)
 }
 .image__title_profile{
   border: 1px solid black;
