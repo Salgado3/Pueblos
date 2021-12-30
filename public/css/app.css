@@ -181,6 +181,16 @@ background-size: cover;
   width: 95%;
   height: 200px;
 }
+.profileImg{
+  padding: auto;
+  margin: 0% 1%;
+  opacity: .9;
+  box-shadow: 8px 8px 6px #747070;
+}
+.profileImg:hover {
+  opacity: 1;
+  transform: scale(1.0125, 1.0125)
+}
 
 .post-Container {
   font-size: .5em;
