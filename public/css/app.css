@@ -106,11 +106,13 @@ body{
 }
 
 .descriptionLearnMore {
-  height: 400px;
-  padding-bottom: 5%;
+  height: auto;
+  padding-bottom: 2%;
+  border: 1.5px solid black;
+  
+}
+#puebloPost_description {
   text-align: justify;
-  text-justify: inter-word;
-  text-overflow: ellipsis;
   overflow: auto;
 }
 .postImgDiv{
