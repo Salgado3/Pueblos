@@ -168,14 +168,16 @@ map.on('click', ({ point }) => {
   .setLngLat(feature.geometry.coordinates)
   .setHTML(
     `
-    <form id="formAirCodesMap" method="POST" action="/api/getAirportMap" id="formAirCodesMap">
-      <button type="submit" form="formAirCodesMap" id="formAirCodesMap" class="btn btn-link">
-        <select  name="formAirCodesMap" id="dropDown" class="btn btn-link" > 
+    <div id="#mapBox_div">
+    <form id="formAirCodesMap" method="POST" action="/api/getAirportMap">
+      <button type="submit" form="formAirCodesMap" class="mapBox_button" id="dropDown">
+        <select  name="formAirCodesMap"  class="mapBox_button" > 
         <option value="${feature.properties.airport}">${feature.properties.name}</option>
         </select>
         </button>
     </form>
-    <p class = "mapParagraph">AIRPORT: ${feature.properties.airport}</p>
+    <p class ="mapParagraph">Nearby Airport: ${feature.properties.airport}</p>
+    </div>
     `
   )
   .addTo(map);

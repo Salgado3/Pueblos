@@ -56,13 +56,13 @@ padding: 0 2%;
 
 }
 
-#formAirCodesMap{
-  color: red;
-}
 .mapParagraph {
   margin-top: 10%;
   width: auto;
   color: black;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 #map {
@@ -70,6 +70,12 @@ padding: 0 2%;
   top: 0;
   bottom: 0;
   width: 100%;
+}
+.mapBox_button {
+  justify-content: center;
+  color: black;
+  background-color: #2c9ff5;
+  font-size: 1rem;
 }
 
 .mapboxgl-popup {

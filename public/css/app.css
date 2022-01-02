@@ -212,10 +212,18 @@ background-size: cover;
 .body {
   height: auto;
 }
-
+#mapBox_div {
+  background-color:#fff9ef;
+  display: flex;
+  border-radius: 25%;
+}
 #dropDown{ 
-  width: 80%;
-  margin: auto;
+ justify-content: center;
+ opacity: .9;
+ background-color: #2c9ff5;
+ color: black;
+ font-size: .75rem;
+ border-radius: 25% 25%;
 }
 #dropDown option{
   width: 80%;
