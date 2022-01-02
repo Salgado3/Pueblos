@@ -220,6 +220,7 @@ background-size: cover;
 #dropDown{ 
  justify-content: center;
  opacity: .9;
+ padding: 1% 2%;
  background-color: #2c9ff5;
  color: black;
  font-size: .75rem;
