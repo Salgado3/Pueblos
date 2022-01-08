@@ -176,7 +176,7 @@ background-size: cover;
    }
 
   .pueblos_logo_img {
-    opacity: .95;
+    opacity: .9;
     margin-top: 15%;
     margin-right: 32.5%;
     object-fit: cover;
@@ -239,7 +239,6 @@ background-size: cover;
   margin: auto;
 }
 .mapContainer{
-  
   margin-top: 2.5%;
   width: 90%;
   height: 75%;
