@@ -1,37 +1,22 @@
 
 .loginTitleDiv {
   opacity: 0.95;
-  margin-top: 1%;
+  margin-top: 5%;
+  margin-left: -10%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 
 }
-.loginTitle_anchor {
-text-decoration: none;
-padding: 0 2%;
-}
 
-.loginTitle {
-  background-color: rgb(59, 56, 56);
-  color: white;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  font-size: 3rem;
+
+.pueblos_logo_img {
+  opacity: .95;
+  object-fit: cover;
+  border: 3px solid white;
+  width: 50%;
+  height: 50%;
   border-radius: 25% 25%;
-  
-  /* color: rgb(221, 124, 140);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-  display: inline;
-  background: rgb(99, 194, 194);
-  padding-left: 1.25%;
-  padding-right: 1.25%;
-  font-size: 3.5rem;
-  text-decoration: none;
-  font-family: "Pattaya", sans-serif;
-  justify-content: center;
-  border-radius: 25% 25%; */
 }
-
-
 .btn {
   background: rgb(221, 124, 140);
   opacity: 0.95;
