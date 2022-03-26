@@ -5,25 +5,33 @@
   <!-- <div class="container col-6 mt-5"></div> -->
   <div class="col-6 post-Container">
     <section class="post-buttons">
-    <a class="btn btn-primary btn-lg" href="/profile">Return to Profile</a>
-    <a class="btn btn-primary btn-lg" href="/feed">Return to Search</a>
+      <a class="btn btn-dark btn-lg" href="/profile">Return to Profile</a>
+      <a class="btn btn-dark btn-lg" href="/feed">Return to Search</a>
     </section>
     <img class="img-fluid" src="<%= post.image%>" />
     <form
-    class="col-1"
-    action="/post/likePost/<%= post.id %>?_method=PUT"
-    method="POST"
-  >
-    <button class="btn btn-primary fa fa-heart" type="submit"></button>
-  </form>
-  <%if(user.bookmark.includes(post._id)){ %>
-   <!-- delete button -->
+      class="col-1"
+      action="/post/likePost/<%= post.id %>?_method=PUT"
+      method="POST"
+    >
+      <button
+        class="btn btn-primary fa fa-heart"
+        id="like_heart"
+        type="submit"
+      ></button>
+    </form>
+    <%if(user.bookmark.includes(post._id)){ %>
+    <!-- delete button -->
     <form
       action="/post/deletePost/<%= post.id %>?_method=DELETE"
       method="POST"
       class="col-3"
     >
-      <button class="btn btn-primary fa fa-trash" type="submit"></button>
+      <button
+        class="btn btn-primary fa fa-trash"
+        id="like_heart"
+        type="submit"
+      ></button>
     </form>
     <%}%>
     <h2 class="puebloPost puebloTitle"><%= post.title%></h2>
@@ -31,23 +39,23 @@
     <a href="<%=post.photoByUrl%>" class="post_anchor_text" target="_blank">
       <h3 class="puebloPost">Photo by: <%=post.photoBy %></h3>
     </a>
-    <div class="postImgDiv">
-    
-  </div>
+    <div class="postImgDiv"></div>
     <div class="row justify-content-between">
       <div class="descriptionLearnMore">
-        <a class="post_anchor_text"
+        <a
+          class="post_anchor_text"
           title="go to wiki"
           href="<%=post.descriptionUrl%>"
           target="_blank"
         >
-          <h3 class="puebloPost" id="puebloPost_description"><%= post.description %></h3>
+          <h3 class="puebloPost" id="puebloPost_description">
+            <%= post.description %>
+          </h3>
         </a>
         <!-- <div class="descriptionLearnMore__overlay"></div> -->
       </div>
-     
+
       <!-- delete button view  -->
-     
     </div>
 
     <div class="col-3 mt-5">

@@ -1,22 +1,21 @@
 .navbar {
   width: 100%;
   height: 200px;
-	padding: 0%;
-	margin: auto 0%;
-  background-image: url("../imgs/gtoBanner.jpg"); 
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-color:#000000;
+  padding: 0%;
+  margin: auto 0%;
+  background-image: url("../imgs/gtoBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000000;
   border-bottom: 2px solid black;
   box-shadow: 4px 4px 3px #747070;
 }
 
-body{
+body {
   background-color: #fff9ef;
   margin: 0;
   padding: 0;
 }
-
 
 #feed {
   background-color: #11ffee00;
@@ -25,47 +24,44 @@ body{
 }
 #feed_ul_Background {
   background-color: #11ffee00;
-  
 }
 
 .postButton {
-  margin-right: .5%;
-  padding-bottom: .5%;
+  margin-right: 0.5%;
+  padding-bottom: 0.5%;
 }
 
 .image__title {
   border: 2px solid black;
-  background-color: #2C9FF5;
+  background-color: #2c9ff5;
   color: black;
   text-align: center;
   font-family: "Arial Narrow Bold", sans-serif;
   font-weight: bold;
   font-size: 2rem;
   text-shadow: 1px 1px #867f7f;
-  
 }
 .image__title_anchor {
   text-decoration: none;
 }
-.feed_imgs{ 
+.feed_imgs {
   border: 2px solid black;
   box-shadow: 10px 10px 8px #747070;
 
-  opacity: .9;
-  transition: .5s;
+  opacity: 0.9;
+  transition: 0.5s;
 }
-.feed_imgs:hover{ 
+.feed_imgs:hover {
   border: 2px solid black;
   opacity: 1;
   transform: scale(1.0125, 1.0125);
 }
 
-
 /* Pueblo post page style */
 .post-Container {
   box-shadow: 8px 8px 6px #747070;
   display: flex;
-  background: #2C9FF5;
+  background: #2c9ff5;
   flex-direction: column;
   margin-bottom: 10%;
   border: 3px solid black;
@@ -75,19 +71,18 @@ body{
   text-align: center;
   font-family: "Arial Narrow Bold", sans-serif;
   font-weight: bold;
-  margin: .5% 0%;
+  margin: 0.5% 0%;
   padding: 1% 1%;
-} 
+}
 
- .post-Container h3 {
+.post-Container h3 {
   color: black;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
-  margin: .5% 0%;
+  margin: 0.5% 0%;
   padding: 1% 1%;
-} 
-
+}
 
 .puebloPostContainer {
   display: flex;
@@ -107,7 +102,7 @@ body{
 
 .descriptionLearnMore {
   height: auto;
-  padding: .25% 2%;
+  padding: 0.25% 2%;
   border-top: 2px solid black;
   /* border-bottom: 2px solid black; */
 }
@@ -115,13 +110,13 @@ body{
   text-align: justify;
   overflow: auto;
 }
-.postImgDiv{
-margin-top: .5%;
-margin-bottom: .5%;
-width:  100%;
-background-size: cover;
+.postImgDiv {
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+  width: 100%;
+  background-size: cover;
 }
-.img-fluid{
+.img-fluid {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -133,7 +128,6 @@ background-size: cover;
   text-decoration: none;
 }
 
-
 /* profile page  */
 .profile {
   background-color: #11ffee00;
@@ -141,18 +135,18 @@ background-size: cover;
   border: 1px solid black;
   transition: 1s;
 }
-.profileImg{
-  opacity: .9;
+.profileImg {
+  opacity: 0.9;
   box-shadow: 10px 10px 8px #747070;
 }
 
 .profileImg:hover {
   opacity: 1;
-  transform: scale(1.0125, 1.0125)
+  transform: scale(1.0125, 1.0125);
 }
-.image__title_profile{
+.image__title_profile {
   border: 1px solid black;
-  background-color: #2C9FF5;
+  background-color: #2c9ff5;
   color: black;
   text-align: center;
   font-family: "Arial Narrow Bold", sans-serif;
@@ -162,9 +156,8 @@ background-size: cover;
 @media screen and (max-width: 851px) {
   .loginTitleDiv {
     opacity: 0.95;
-  height: 100%;
-  width: 50%;
-  
+    height: 100%;
+    width: 50%;
   }
 
   .loginTitle_anchor {
@@ -173,10 +166,10 @@ background-size: cover;
     margin: auto;
     height: 40%;
     width: 100%;
-   }
+  }
 
   .pueblos_logo_img {
-    opacity: .9;
+    opacity: 0.9;
     margin-top: 15%;
     margin-right: 32.5%;
     object-fit: cover;
@@ -185,70 +178,65 @@ background-size: cover;
     height: 100%;
     border-radius: 25% 25%;
   }
- 
-.image {
-  display: block;
-  width: 95%;
-  height: 200px;
-}
-.profileImg{
-  padding: auto;
-  margin: 0% 1%;
-  opacity: .9;
-  box-shadow: 8px 8px 6px #747070;
-}
-.profileImg:hover {
-  opacity: 1;
-  transform: scale(1.0125, 1.0125)
-}
 
-.post-Container {
-  font-size: .5em;
-  width: 90%;
-  
-}
-.post-buttons {
-  margin: .5%
-}
-.puebloTitle {
-  text-shadow: 2px 2px #867f7f;
-}
+  .image {
+    display: block;
+    width: 95%;
+    height: 200px;
+  }
+  .profileImg {
+    padding: auto;
+    margin: 0% 1%;
+    opacity: 0.9;
+    box-shadow: 8px 8px 6px #747070;
+  }
+  .profileImg:hover {
+    opacity: 1;
+    transform: scale(1.0125, 1.0125);
+  }
 
-/* feed page */
-.body {
-  height: auto;
-}
-#mapBox_div {
-  background-color:#fff9ef;
-  display: flex;
-  border-radius: 25%;
-}
-#dropDown{ 
- justify-content: center;
- opacity: .9;
- width: 90%;
- padding: 1% 2%;
- margin: 2% 0%;
- background-color: #90a9bd;
- color: black;
- font-size: .95rem;
- font-weight: 500;
-}
-#dropDown option{
-  width: 80%;
-  margin: auto;
-}
-.mapContainer{
-  margin-top: 2.5%;
-  width: 90%;
-  height: 75%;
-  border: 3px solid rgb(221, 124, 140);
+  .post-Container {
+    font-size: 0.5em;
+    width: 90%;
+  }
+  .post-buttons {
+    margin: 0.5%;
+  }
+  .puebloTitle {
+    text-shadow: 2px 2px #867f7f;
+  }
 
+  /* feed page */
+  .body {
+    height: auto;
+  }
+  #mapBox_div {
+    background-color: #fff9ef;
+    display: flex;
+    border-radius: 25%;
+  }
+  #dropDown {
+    justify-content: center;
+    opacity: 0.9;
+    width: 90%;
+    padding: 1% 2%;
+    margin: 2% 0%;
+    background-color: #90a9bd;
+    color: black;
+    font-size: 0.95rem;
+    font-weight: 500;
+  }
+  #dropDown option {
+    width: 80%;
+    margin: auto;
+  }
+  .mapContainer {
+    margin-top: 2.5%;
+    width: 90%;
+    height: 75%;
+    border: 3px solid rgb(221, 124, 140);
+  }
+  .map {
+    width: auto;
+  }
 }
-.map {
-  width: auto;
-}
-
-}
-
-
