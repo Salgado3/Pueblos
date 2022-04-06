@@ -17,7 +17,9 @@ body {
 }
 
 #login_button {
+  display: inline-block;
   margin: 0% 1% 0 1%;
+  min-width: 100px;
 }
 .welcome {
   color: rgb(8, 24, 28);
